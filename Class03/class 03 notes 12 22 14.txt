@@ -1,0 +1,66 @@
+
+Class notes 12/22/14 (Class 03)
+===============================
+
+Regex pattern matching in python:
+- import "re" python module
+- create an re pattern object
+- match pattern against text
+- group instances of a match
+
+re.search(pattern, text to search)
+	returns a match object
+re.search(pattern, text to search).group()
+	returns data in a search group
+
+
+NB: regexes are different across their implementation in different programming languages
+
+
+(selected) PYTHON REGEX NOTATION:
+=================================
+
+\d 	: any digit
++ 	: preceding thing, at least one of it
+[] 	: one of whatever is within the brackets
+. 	: matches any character
+\w 	: matches alphanumerics
+
+
+BeautifulSoup
+=============
+
+BeautifulSoup()				: creates a parseable BeautifulSoup object
+<bs object>.find('<txt>', attrs={})	: finds txt with certain xml attrs
+<bs object>.text			: gives the text inside a tagged BS object
+
+
+HTML Parsing vs. APIs
+=====================
+
+HTML parsing/scraping emulates human behavior of visiting a webpage
+vs.
+API lets us interface directly with the site (developer 'lets us in')
+
+
+JSON
+====
+
+json.loads()	: turns text into a dictionary (json module)
+
+can be useful for APIs; see example of sentiment analysis API in class code
+
+
+API vs. API wrappers
+====================
+
+API is a set of routines to call web app software
+vs. 
+API wrappers are wrapped in a specific programming language to give functions in that language
+
+
+
+
+
+
+
